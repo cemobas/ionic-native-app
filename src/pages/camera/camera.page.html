@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Photographer</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <button ion-button icon-left full (click)="takePhoto()">{{buttext}}</button>
+
+    <ion-card *ngIf="imgSrc">
+      <img [src]="imgSrc">
+    </ion-card>
+</ion-content>
